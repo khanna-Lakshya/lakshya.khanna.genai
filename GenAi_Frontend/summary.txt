@@ -1,0 +1,23 @@
+SUMMARY - ATTENTION IS ALL YOU NEED
+
+
+Transformer Model: 
+This innovative model relies completely on attention mechanisms, doing away with traditional methods like recurrence and convolutions, which means it processes data more efficiently.
+
+Structure:
+      Encoder: Made up of 6 identical layers, each with a multi-head self-attention mechanism and a feed-forward network.
+      Decoder: Also consists of 6 layers, but with an extra attention mechanism that focuses on the encoder's output. Both                  parts use shortcuts (residual connections) and a technique called layer normalization to improve performance.
+Attention Mechanisms:
+      Self-Attention: This allows the model to consider the entire sequence of words when processing each word, making it                          better at understanding context.
+      Scaled Dot-Product Attention: This calculates how much focus to give to each word by comparing them mathematically and                                     then normalizing the results.
+      Multi-Head Attention: This technique runs several self-attention processes in parallel, making the model more robust.
+
+Positional Encoding: Because the model doesn’t naturally understand the order of words, it adds extra information to keep track of word positions.
+
+Training:
+      Dropout: To prevent overfitting, dropout is used, which randomly ignores parts of the model during training.
+      Label Smoothing: This technique helps improve the model’s accuracy and the quality of translations by slightly                                altering the training labels.
+Performance: The Transformer sets new benchmarks in translation tasks, achieving impressive scores while also training                    faster. For instance, it scored 28.4 for English-to-German and 41.8 for English-to-French translations.
+Applications:
+It uses three types of attention mechanisms across the encoder and decoder to ensure each part of the sequence is processed effectively.
+
